@@ -1,0 +1,5 @@
+{
+  "name": "C# Regex Wizard",
+  "description": "An AI-powered tool to generate, explain, and test C# Regular Expressions from natural language descriptions.",
+  "requestFramePermissions": []
+}
