@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { generateRegexSolution } from './services/gemini';
-import { RegexResult, LoadingState } from './types';
-import { DEFAULT_PROMPT } from './constants';
-import CodeBlock from './components/CodeBlock';
-import RegexTester from './components/RegexTester';
+import { generateRegexSolution } from './services/gemini.ts';
+import { RegexResult, LoadingState } from './types.ts';
+import { DEFAULT_PROMPT } from './constants.ts';
+import CodeBlock from './components/CodeBlock.tsx';
+import RegexTester from './components/RegexTester.tsx';
 import { Sparkles, Terminal, Code2, AlertCircle, Wand2 } from 'lucide-react';
 
 const App: React.FC = () => {

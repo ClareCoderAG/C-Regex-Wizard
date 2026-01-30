@@ -1,6 +1,6 @@
 import { GoogleGenAI, Type } from "@google/genai";
-import { SYSTEM_INSTRUCTION } from '../constants';
-import { RegexResult } from '../types';
+import { SYSTEM_INSTRUCTION } from '../constants.ts';
+import { RegexResult } from '../types.ts';
 
 export const generateRegexSolution = async (userPrompt: string): Promise<RegexResult> => {
   if (!process.env.API_KEY) {
@@ -10,7 +10,7 @@ export const generateRegexSolution = async (userPrompt: string): Promise<RegexRe
   const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
   const response = await ai.models.generateContent({
-    model: 'gemini-3-flash-preview',
+    model: 'gemini-3-pro-preview',
     contents: userPrompt,
     config: {
       systemInstruction: SYSTEM_INSTRUCTION,

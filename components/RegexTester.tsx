@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { RegexResult, TestCase } from '../types';
+import { RegexResult, TestCase } from '../types.ts';
 import { Play, AlertTriangle, CheckCircle2, XCircle } from 'lucide-react';
 
 interface RegexTesterProps {
